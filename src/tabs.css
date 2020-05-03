@@ -1,0 +1,16 @@
+.tabs{
+    margin:auto;
+    width: 90%;
+}
+.tabs .k-tabstrip-items .k-link{
+    color:#2de5ab;
+}
+.tabs .k-tabstrip-items{
+    border-color: #501d4d;
+}
+.tabs .k-tabstrip-items .k-item.k-state-active, .k-tabstrip-items .k-item.k-state-selected {
+    border-color: #501d4d #501d4d transparent #501d4d;
+}
+.tabs .k-tabstrip > .k-content{
+    border-color: #501d4d;
+}

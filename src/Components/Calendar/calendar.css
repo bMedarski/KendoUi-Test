@@ -1,0 +1,26 @@
+.Calendar .k-scheduler-navigation .k-toolbar .k-button{
+    padding:0.175rem 0.75rem;
+}
+.Calendar .k-event{
+    background-color:#2de5ab;
+}
+.Calendar .k-toolbar .k-button{
+    padding: 0.375rem 0.75rem;
+    margin: 2px;
+    line-height:20px;
+    color:white;
+    background-color:#2de5ab;
+}
+.Calendar .k-scheduler .k-scheduler-header .k-scheduler-views .k-state-active{
+    background-color:#501d4d;
+}
+.Calendar .k-scheduler .k-scheduler-header .k-scheduler-navigation .k-button{
+    background-color:#501d4d;
+}
+.Calendar .k-picker-wrap{
+    display:none;
+}
+.Calendar .k-toolbar .k-scheduler-navigation .k-button-icon{
+    width: 32px;
+    height: 32px;
+}

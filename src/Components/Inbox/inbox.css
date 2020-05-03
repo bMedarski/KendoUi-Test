@@ -1,0 +1,28 @@
+
+.inbox .site-grid-container thead tr{
+    height: 40px;
+    font-size: 12px;
+    background-color: #501d4d !important;
+    color: white !important; 
+}
+.inbox .site-grid-container tbody tr{
+    height: 40px;
+    font-size: 12px;
+}
+.k-card{
+    text-align: start;
+}
+.k-animation-container{
+    width: 100%;
+}
+.k-pager-numbers .k-link.k-state-selected {
+    border-color: #2de5ab !important;
+    background-color: #2de5ab !important;
+    color: white !important;
+}
+.k-pager-numbers .k-link{
+    color: #2de5ab !important;
+}
+.inbox .k-pager-nav.k-link, .k-pager-refresh{
+    color: #2de5ab;
+}

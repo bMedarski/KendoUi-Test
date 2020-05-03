@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  margin: 30px;
+}
+.auth-btn{
+  width: 150px;
+}
+.App .auth-btn {
+  border-color:#2de5ab;
+  background-color:#2de5ab;
+  color:white;
+}

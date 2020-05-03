@@ -1,0 +1,32 @@
+.list-item{
+    display:flex;
+    flex-direction: row;
+    margin: 10px;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+.picture-avatar{
+    background-color: lightgrey;
+    border-radius: 30px;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.avatar{
+  width: 5%;
+}
+
+.contact-name, .contact-email, .contact-phone{
+    width: 30%;
+    text-align: start;
+}
+
+.contacts-header{
+    height: 40px;
+    font-size: 12px;
+    background-color: #501d4d !important;
+    color: white !important;
+    line-height: 40px;
+}
