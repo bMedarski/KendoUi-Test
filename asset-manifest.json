@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/KendoUi-Test/static/css/main.02d64f4f.chunk.css",
+    "main.js": "/KendoUi-Test/static/js/main.6c37e61a.chunk.js",
+    "main.js.map": "/KendoUi-Test/static/js/main.6c37e61a.chunk.js.map",
+    "runtime-main.js": "/KendoUi-Test/static/js/runtime-main.7dfe3598.js",
+    "runtime-main.js.map": "/KendoUi-Test/static/js/runtime-main.7dfe3598.js.map",
+    "static/css/2.86d98a49.chunk.css": "/KendoUi-Test/static/css/2.86d98a49.chunk.css",
+    "static/js/2.401d9ef3.chunk.js": "/KendoUi-Test/static/js/2.401d9ef3.chunk.js",
+    "static/js/2.401d9ef3.chunk.js.map": "/KendoUi-Test/static/js/2.401d9ef3.chunk.js.map",
+    "index.html": "/KendoUi-Test/index.html",
+    "precache-manifest.1cedce5d68d81c171afdc91cc5ecf30e.js": "/KendoUi-Test/precache-manifest.1cedce5d68d81c171afdc91cc5ecf30e.js",
+    "service-worker.js": "/KendoUi-Test/service-worker.js",
+    "static/css/2.86d98a49.chunk.css.map": "/KendoUi-Test/static/css/2.86d98a49.chunk.css.map",
+    "static/css/main.02d64f4f.chunk.css.map": "/KendoUi-Test/static/css/main.02d64f4f.chunk.css.map",
+    "static/js/2.401d9ef3.chunk.js.LICENSE.txt": "/KendoUi-Test/static/js/2.401d9ef3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7dfe3598.js",
+    "static/css/2.86d98a49.chunk.css",
+    "static/js/2.401d9ef3.chunk.js",
+    "static/css/main.02d64f4f.chunk.css",
+    "static/js/main.6c37e61a.chunk.js"
+  ]
+}
