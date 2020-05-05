@@ -47,7 +47,7 @@ const Inbox = ({emails}) => {
               <CardHeader>{clickedRow.sender}</CardHeader>
               <CardBody>
                   <CardTitle>{clickedRow.subject}</CardTitle>
-                  <p>{clickedRow.date}</p>
+                  <p>{clickedRow.date.toString()}</p>
                   <p>{clickedRow.content}</p>
                   <p>{clickedRow.clippedContent}</p>
               </CardBody>

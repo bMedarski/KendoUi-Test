@@ -80,17 +80,19 @@ const App = () => {
               return response.json();
           })
           .then((res) => {
-            let eventsList = res.items;
-            eventsList.forEach(e => {
+            res.items.forEach(event => {
               let newEvent = {};
-              newEvent.start = new Date(e.start.dateTime);
-              newEvent.end = new Date(e.end.dateTime);
-              newEvent.title = e.summary;
 
-              setEvents(oldEvents => [...oldEvents, newEvent]);
-            })
+              if(event.start && event.end){
+                newEvent.id = event.id;
+                newEvent.start = new Date(event.start.dateTime);
+                newEvent.end = new Date(event.end.dateTime);
+                newEvent.title = event.summary;
+                
+                setEvents(oldEvents => [...oldEvents, newEvent]);
+              }
 
-              return res;
+            });
           })
           .catch((err) => {
               console.log(err);
@@ -118,8 +120,6 @@ const App = () => {
               
               let photo = contact.link[0].href;
               if(photo){
-                const proxyurl = "https://thingproxy.freeboard.io/fetch/";
-
                 fetch(`${photo}&access_token=${result.access_token}`)
                   .then((response) => {
                     newContact.photo = response.url;

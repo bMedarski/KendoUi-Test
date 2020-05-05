@@ -26,3 +26,6 @@
 .inbox .k-pager-nav.k-link, .k-pager-refresh{
     color: #2de5ab;
 }
+.inbox .k-master-row{
+    cursor: pointer;
+}
