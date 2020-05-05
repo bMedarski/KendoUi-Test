@@ -10,7 +10,7 @@ const ContactItem = props => {
         <div className='row p-2 border-bottom list-item'>
             <div className='col-2 avatar'>
                 <Avatar shape='circle' type='img' className='picture-avatar'>
-                    <img src={item.photo} alt=''/>
+                    <img src={item.photo} alt='' className='photo'/>
                 </Avatar>
             </div>
             <div className='col-3 contact-name'>

@@ -103,7 +103,7 @@ const App = () => {
       window.gapi.auth.authorize({ client_id: config.CLIENT_ID, scope: config.SCOPE_CONTACTS, immediate: false }, handleContactsAuthorization);
     });
     const handleContactsAuthorization = (result) => {
-      fetch(`https://www.google.com/m8/feeds/contacts/default/full?alt=json&access_token=${result.access_token}`)
+      fetch(`https://www.google.com/m8/feeds/contacts/default/full?alt=json&access_token=${result.access_token}&max-results=25&v=3.0`)
           .then((response) => {
               return response.json();
           })
@@ -118,7 +118,9 @@ const App = () => {
               
               let photo = contact.link[0].href;
               if(photo){
-                fetch(`${photo}?access_token=${result.access_token}`)
+                const proxyurl = "https://thingproxy.freeboard.io/fetch/";
+
+                fetch(`${photo}&access_token=${result.access_token}`)
                   .then((response) => {
                     newContact.photo = response.url;
                   })

@@ -18,6 +18,11 @@
   width: 5%;
 }
 
+.photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
 .contact-name, .contact-email, .contact-phone{
     width: 30%;
     text-align: start;
