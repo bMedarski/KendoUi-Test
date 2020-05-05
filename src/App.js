@@ -26,22 +26,26 @@ const App = () => {
 
   const handleAuth = () => {
     window.gapi.client.setApiKey(config.API_KEY);
-    getEmails();
-    getCalendarEvents();
-    getContacts();
+    authorize();
   }
-  const getEmails = () => {
-    setTimeout( ()=> {
-      window.gapi.auth.authorize({ client_id: config.CLIENT_ID, scope: config.SCOPE_GMAIL, immediate: false }, handleGmailAuthorization);
+  const authorize = () => {
+        setTimeout( ()=> {
+          window.gapi.auth.authorize({ client_id: config.CLIENT_ID, scope: `${config.SCOPE_GMAIL} ${config.SCOPE_CALENDAR} ${config.SCOPE_CONTACTS}`, immediate: false }, handleGmailAuthorization);
     });
-    const handleGmailAuthorization = (result) => {
-      fetch(`https://www.googleapis.com/gmail/v1/users/me/messages?access_token=${result.access_token}&maxResults=30`)
+  }
+  const handleGmailAuthorization = (result) => {
+    getEmails(result.access_token);
+    getCalendarEvents(result.access_token);
+    getContacts(result.access_token);
+  }
+  const getEmails = (access_token) => {
+      fetch(`https://www.googleapis.com/gmail/v1/users/me/messages?access_token=${access_token}&maxResults=30`)
           .then((response) => {
               return response.json();
           })
           .then((res) => {
               res.messages.forEach(email => {
-                fetch(`https://www.googleapis.com/gmail/v1/users/me/messages/${email.id}?access_token=${result.access_token}`)
+                fetch(`https://www.googleapis.com/gmail/v1/users/me/messages/${email.id}?access_token=${access_token}`)
                   .then((response) => {
                       return response.json();
                   })
@@ -69,13 +73,8 @@ const App = () => {
               console.log(err);
           })
       }
-  }
-  const getCalendarEvents = () => {
-    setTimeout( ()=> {
-      window.gapi.auth.authorize({ client_id: config.CLIENT_ID, scope: config.SCOPE_CALENDAR, immediate: false }, handleCalendarAuthorization);
-    });
-    const handleCalendarAuthorization = (result) => {
-      fetch(`https://www.googleapis.com/calendar/v3/calendars/primary/events?access_token=${result.access_token}`)
+  const getCalendarEvents = (access_token) => {
+      fetch(`https://www.googleapis.com/calendar/v3/calendars/primary/events?access_token=${access_token}`)
           .then((response) => {
               return response.json();
           })
@@ -98,14 +97,9 @@ const App = () => {
               console.log(err);
           })
     }
-  }
 
-  const getContacts = () => {
-    setTimeout( ()=> {
-      window.gapi.auth.authorize({ client_id: config.CLIENT_ID, scope: config.SCOPE_CONTACTS, immediate: false }, handleContactsAuthorization);
-    });
-    const handleContactsAuthorization = (result) => {
-      fetch(`https://www.google.com/m8/feeds/contacts/default/full?alt=json&access_token=${result.access_token}&max-results=25&v=3.0`)
+  const getContacts = (access_token) => {
+      fetch(`https://www.google.com/m8/feeds/contacts/default/full?alt=json&access_token=${access_token}&max-results=25&v=3.0`)
           .then((response) => {
               return response.json();
           })
@@ -120,7 +114,7 @@ const App = () => {
               
               let photo = contact.link[0].href;
               if(photo){
-                fetch(`${photo}&access_token=${result.access_token}`)
+                fetch(`${photo}&access_token=${access_token}`)
                   .then((response) => {
                     newContact.photo = response.url;
                   })
@@ -137,7 +131,6 @@ const App = () => {
               console.log(err);
           })
     }
-  }
   return (
     <div className="App">
           {emails.length > 0 
