@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b31327c5d313e14538f6103907f2355",
+    "revision": "cf4bd79c7b43b6ebd5361374074b960c",
     "url": "/KendoUi-Test/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/KendoUi-Test/static/css/2.86d98a49.chunk.css"
   },
   {
-    "revision": "df32ba7091a70bba04d1",
-    "url": "/KendoUi-Test/static/css/main.aadcd7e7.chunk.css"
+    "revision": "476fd4a2cab4961bbd16",
+    "url": "/KendoUi-Test/static/css/main.5cd5339e.chunk.css"
   },
   {
     "revision": "3b44f41f0b22c666fbf1",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/KendoUi-Test/static/js/2.401d9ef3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df32ba7091a70bba04d1",
-    "url": "/KendoUi-Test/static/js/main.126a3162.chunk.js"
+    "revision": "476fd4a2cab4961bbd16",
+    "url": "/KendoUi-Test/static/js/main.0a5c1926.chunk.js"
   },
   {
     "revision": "6ab6b5c0c3199180ad80",
