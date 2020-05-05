@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/KendoUi-Test/precache-manifest.1c93684bc428002a7910de4f43156646.js"
+  "/KendoUi-Test/precache-manifest.e9dbeda7496e8f7a81cea43d32056c29.js"
 );
 
 self.addEventListener('message', (event) => {
