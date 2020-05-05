@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/KendoUi-Test/static/css/main.5cd5339e.chunk.css",
-    "main.js": "/KendoUi-Test/static/js/main.0a5c1926.chunk.js",
-    "main.js.map": "/KendoUi-Test/static/js/main.0a5c1926.chunk.js.map",
+    "main.js": "/KendoUi-Test/static/js/main.6e64ec88.chunk.js",
+    "main.js.map": "/KendoUi-Test/static/js/main.6e64ec88.chunk.js.map",
     "runtime-main.js": "/KendoUi-Test/static/js/runtime-main.7dfe3598.js",
     "runtime-main.js.map": "/KendoUi-Test/static/js/runtime-main.7dfe3598.js.map",
     "static/css/2.86d98a49.chunk.css": "/KendoUi-Test/static/css/2.86d98a49.chunk.css",
     "static/js/2.401d9ef3.chunk.js": "/KendoUi-Test/static/js/2.401d9ef3.chunk.js",
     "static/js/2.401d9ef3.chunk.js.map": "/KendoUi-Test/static/js/2.401d9ef3.chunk.js.map",
     "index.html": "/KendoUi-Test/index.html",
-    "precache-manifest.0fd3b8b67f46333b6c6daab3d843f466.js": "/KendoUi-Test/precache-manifest.0fd3b8b67f46333b6c6daab3d843f466.js",
+    "precache-manifest.9ceb0209bf9747ad10b09e7e6b2d16e9.js": "/KendoUi-Test/precache-manifest.9ceb0209bf9747ad10b09e7e6b2d16e9.js",
     "service-worker.js": "/KendoUi-Test/service-worker.js",
     "static/css/2.86d98a49.chunk.css.map": "/KendoUi-Test/static/css/2.86d98a49.chunk.css.map",
     "static/css/main.5cd5339e.chunk.css.map": "/KendoUi-Test/static/css/main.5cd5339e.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.86d98a49.chunk.css",
     "static/js/2.401d9ef3.chunk.js",
     "static/css/main.5cd5339e.chunk.css",
-    "static/js/main.0a5c1926.chunk.js"
+    "static/js/main.6e64ec88.chunk.js"
   ]
 }
